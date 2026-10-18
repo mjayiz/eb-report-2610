@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>에블바레 광고·검색 리포트 (2026.10)</title>
+<style>
+:root{--red:#e8412c;--ink:#1d1d1f;--sub:#6e6e73;--line:#e5e5ea;--bg:#faf8f6;--card:#fff;--green:#00a83a}
+*{box-sizing:border-box}body{margin:0;font-family:Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+.wrap{max-width:1040px;margin:0 auto;padding:48px 24px 80px}
+header{border-bottom:3px solid var(--ink);padding-bottom:20px;margin-bottom:36px}
+.eyebrow{color:var(--red);font-weight:800;letter-spacing:.08em;font-size:13px}
+h1{font-size:34px;margin:6px 0 6px;letter-spacing:-.02em}
+.meta{color:var(--sub);font-size:14px}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}nav a{font-size:13px;color:var(--ink);text-decoration:none;border:1px solid var(--line);background:#fff;padding:6px 12px;border-radius:999px}
+section{margin:48px 0}h2{font-size:23px;margin:0 0 6px;letter-spacing:-.01em}h2 .n{color:var(--red);margin-right:8px}
+.lead{color:var(--sub);margin:0 0 20px;font-size:15px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.kpi .l{font-size:13px;color:var(--sub)}.kpi .v{font-size:30px;font-weight:800;letter-spacing:-.02em}.kpi .s{font-size:12px;color:var(--sub)}
+.kpi.hi{border-color:var(--red);box-shadow:0 0 0 1px var(--red) inset}.kpi.hi .v{color:var(--red)}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:14px}
+th,td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line)}th{background:#f3f1ef;font-size:13px;color:var(--sub);font-weight:700}
+tr:last-child td{border-bottom:0}td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}tr.me td{background:#fff3f0;font-weight:700}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}@media(max-width:760px){.grid2{grid-template-columns:1fr}h1{font-size:27px}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px}
+.card h3{margin:0 0 8px;font-size:16px}.card ul{margin:0;padding-left:18px}.card li{margin:4px 0}
+.tag{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;background:#f3f1ef;color:var(--sub);margin-left:6px;vertical-align:middle}
+.tag.red{background:#ffe6e1;color:var(--red)}
+.chart{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 18px 8px}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:13px;margin:0 0 6px 4px}.legend i{display:inline-block;width:12px;height:3px;border-radius:2px;margin-right:6px;vertical-align:middle}
+svg text{font-family:inherit}
+.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative;margin-top:8px}
+.timeline:before{content:"";position:absolute;left:0;right:0;top:15px;height:2px;background:var(--line)}
+.tl{position:relative;padding-top:36px;padding-right:12px}.tl:before{content:"";position:absolute;top:8px;left:0;width:16px;height:16px;border-radius:50%;background:#fff;border:3px solid #c7c7cc}
+.tl.me:before{border-color:var(--red);background:var(--red)}.tl .d{font-weight:800;font-size:18px}.tl.me .d{color:var(--red)}.tl .b{font-weight:700}.tl .x{font-size:13px;color:var(--sub)}
+@media(max-width:760px){.timeline{grid-template-columns:1fr 1fr;row-gap:16px}.timeline:before{display:none}}
+.note{font-size:13px;color:var(--sub);margin-top:10px}
+.callout{border-left:4px solid var(--red);background:#fff;padding:14px 18px;border-radius:0 12px 12px 0;margin-top:14px;font-size:15px}
+.internal{background:#f4f4f6;border:1px dashed #c7c7cc;border-radius:14px;padding:20px 22px}
+.internal h2{font-size:19px}
+footer{margin-top:56px;font-size:12px;color:var(--sub);border-top:1px solid var(--line);padding-top:16px}
+.weak{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}@media(max-width:760px){.weak{grid-template-columns:1fr 1fr}}
+.w{background:#fff;border:1px solid #f3c9c1;border-left:4px solid var(--red);border-radius:12px;padding:14px 16px}
+.wl{font-size:13px;color:var(--sub)}.wv{font-size:26px;font-weight:800;color:var(--red);letter-spacing:-.02em}.wv span{font-size:15px;color:var(--sub);font-weight:600}.ws{font-size:12px;color:var(--sub)}
+.adscale{background:#1d1d1f;color:#fff;border-radius:18px;padding:26px 28px;margin:6px 0 18px}
+.adscale .note{color:#aaa}.asl{font-size:13px;color:#bbb}.asbig{display:flex;align-items:flex-end;gap:28px;margin:8px 0 18px;flex-wrap:wrap}
+.asn{font-size:54px;font-weight:900;letter-spacing:-.03em;line-height:1}.asn.wb{color:#f5a623}.asn.eb{color:#ff6b55}.asc{font-size:13px;color:#ccc;margin-top:4px}.asvs{font-size:20px;color:#777;padding-bottom:18px}
+.bars{display:grid;gap:8px}.bar{display:grid;grid-template-columns:140px 1fr 60px;align-items:center;gap:10px;font-size:13px}.bt{background:#333;border-radius:6px;height:14px;overflow:hidden}.bt i{display:block;height:100%;border-radius:6px;min-width:3px}.bv{text-align:right;font-variant-numeric:tabular-nums}
+.asgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:18px}@media(max-width:760px){.asgrid{grid-template-columns:1fr 1fr}}
+.asgrid div{background:#2a2a2c;border-radius:12px;padding:12px 14px}.asgrid b{display:block;font-size:22px;color:#fff}.asgrid span{font-size:12px;color:#bbb}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}@media(max-width:760px){.grid3{grid-template-columns:1fr}}
+.ev{background:#fff;border:1px solid var(--line);border-top:4px solid var(--red);border-radius:12px;padding:14px 16px}.evd{font-weight:800;color:var(--red)}.evt{font-weight:700;margin:2px 0}.evs{font-size:13px;color:var(--sub)}
+.keybox{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}@media(max-width:760px){.keybox{grid-template-columns:1fr}}
+.kb{background:#1d1d1f;color:#fff;border-radius:16px;padding:20px 22px}.kb.dim{background:#f3f1ef;color:var(--ink)}.kbn{font-size:40px;font-weight:900;letter-spacing:-.03em;color:#f5a623;line-height:1.1}.kb.dim .kbn{color:#8e8e93}.kbt{font-weight:700;margin-top:6px}.kbs{font-size:12px;color:#bbb;margin-top:2px}.kb.dim .kbs{color:var(--sub)}
+</style></head><body><div class="wrap">
+<header>
+<div class="eyebrow">EVERYBARRE · META ADS & SEARCH REPORT</div>
+<h1>에블바레 광고 성과 · 바레 시장 검색 리포트</h1>
+<div class="meta">광고 기간 2026.10.7 ~ 10.18 · 검색 데이터 네이버 데이터랩 (2016.1 ~ 2026.9 월별, 최근 1년 일별) · 작성 2026.10.19</div>
+<nav><a href="#key">1. 시장 구도</a><a href="#ads">2. 광고 성과</a><a href="#msg">3. 메시지 반응</a><a href="#who">4. 반응한 사람</a><a href="#why">5. 경쟁사 광고</a><a href="#origin">6. 원조 타임라인</a><a href="#search">7. 검색 관심도</a><a href="#market">8. 시장 성장</a><a href="#counter">9. 격차와 대응</a><a href="#plan">10. 실행 일정</a><a href="#aware">11. 인지도 전략</a><a href="#branch">12. 지점별 광고안</a></nav>
+</header>
+
+<section id="key"><h2><span class="n">01</span>지금 바레 시장은 '광고 소재'와 '광고 개수' 싸움</h2>
+<p class="lead">크리에이터형 콘텐츠로 승부가 나는 단계가 아니라, 광고 소재를 많이 만들어 많이 돌리는 브랜드가 검색과 인지도를 가져가는 단계</p>
+<div class="keybox">
+<div class="kb"><div class="kbn">약 150개</div><div class="kbt">원더바레 게재 중 Meta 광고</div><div class="kbs">최근 30일에만 64개 신규 · 지점 계정까지 광고</div></div>
+<div class="kb"><div class="kbn">59.0</div><div class="kbt">원더바레 브랜드 검색량 (1위)</div><div class="kbs">광고를 가장 많이 하는 곳이 검색도 1위</div></div>
+<div class="kb dim"><div class="kbn">0~1개</div><div class="kbt">유어바레 · 포지티브바레 · 플렉토 광고</div><div class="kbs">광고를 거의 안 하는 곳은 검색량 11 이하</div></div>
+</div>
+<h3 style="margin:22px 0 10px;font-size:17px">1위 브랜드의 광고는 '크리에이터 영상'이 아니라 '짧은 광고 소재'</h3>
+<table><thead><tr><th style="width:200px">소재 유형</th><th>실제 광고 문구 (원더바레, 게재 중)</th></tr></thead><tbody>
+<tr><td>동네 혜택형</td><td>"영등포 주차 지옥? 여긴 2시간 무료 주차!"</td></tr>
+<tr><td>동네 후기형</td><td>"미사 힙업 성지 등극! 입소문 난 '애플힙 공장'" → 네이버 플레이스 후기로 연결</td></tr>
+<tr><td>고민 공략형</td><td>"필라테스 3개월 다녀도 효과 없었다면?"</td></tr>
+<tr><td>트렌드형</td><td>"운동도 패션처럼, 트렌디한 운동 맛집" → 체험 수업 신청</td></tr>
+<tr><td>셀럽형</td><td>"연예인들의 탄탄한 몸매 비법 '바레'"</td></tr>
+</tbody></table>
+<div class="callout"><b>결론</b>: 이기는 방법은 '소재를 많이 만들고 → 빠르게 테스트하고 → 잘 되는 소재에 예산을 싣는 것'. 에블바레는 소재 효율은 이미 검증됨(프로필 방문 1회당 약 88원). <b>이제 과제는 소재 개수와 지점별 광고 확대.</b></div>
+</section>
+
+<section id="ads"><h2><span class="n">02</span>광고 성과 (10/7~10/18)</h2>
+<p class="lead">목표: 인스타그램 프로필 방문 늘리기</p>
+<div class="kpis">
+<div class="kpi hi"><div class="l">프로필 방문</div><div class="v">1,366회</div></div>
+<div class="kpi hi"><div class="l">방문 1회당 비용</div><div class="v">약 88원</div><div class="s">9월 광고 170~263원 대비 절반 수준</div></div>
+<div class="kpi"><div class="l">광고 노출</div><div class="v">19,280회</div></div>
+<div class="kpi"><div class="l">광고비</div><div class="v">120,130원</div><div class="s">하루 5,000원 × 2개</div></div>
+</div>
+<table style="margin-top:14px"><thead><tr><th>광고</th><th>핵심 메시지</th><th class="num">프로필 방문</th><th class="num">1회당 비용</th><th class="num">클릭률</th></tr></thead><tbody>
+<tr><td>기분부터 (영상)</td><td>감성·자신감</td><td class="num">736</td><td class="num">약 82원</td><td class="num">6.9%</td></tr>
+<tr><td>연예인 (슬라이드)</td><td>셀럽이 다니는 바레</td><td class="num">630</td><td class="num">약 95원</td><td class="num">5.3%</td></tr>
+</tbody></table>
+</section>
+
+<section id="msg"><h2><span class="n">03</span>어떤 메시지가 먹혔나</h2>
+<p class="lead">10월 광고와 9월 광고, 인스타 게시물 반응을 함께 비교</p>
+<div class="grid2">
+<div class="card"><h3>감성·공감 메시지 <span class="tag red">가장 효율적</span></h3><ul><li>"기분부터 달라요"가 방문 비용 최저 (82원)</li><li>공유가 연예인 광고의 3.5배 (14회 vs 4회)</li></ul></div>
+<div class="card"><h3>사람 얼굴이 먼저 <span class="tag red">오래 봄</span></h3><ul><li>연예인 슬라이드 첫 영상: 44%가 25% 지점까지 시청</li><li>첫 3초에 인물과 메시지를 함께 보여주는 구성이 효과적</li></ul></div>
+<div class="card"><h3>'따라 하기' 정보형 <span class="tag">저장 유도</span></h3><ul><li>9월 추석 홈트 광고: 저장 44회, 다른 광고의 6~9배</li></ul></div>
+<div class="card"><h3>인스타 게시물 키워드 반응</h3><ul><li><b>강함</b>: 원장 루틴 235 · 퀸 되는 법 183 · 추석 홈트 139 · 가을 엉덩회 117 · 헤이즈쌤 110</li><li><b>약함</b>: 몰입감 58 · 월요일 이유 37 · 시간표 18</li><li>사람·자신감·따라 하기·이벤트가 강하고, 운동 방식 설명은 약함</li></ul></div>
+</div>
+<p class="note">게시물 수치는 좋아요 기준. 공동 작성 게시물(퀸 되는 법, 원장 루틴)은 다른 계정에도 함께 노출되어 수치가 높게 나올 수 있음.</p>
+</section>
+
+<section id="who"><h2><span class="n">04</span>누가 반응했나 (여성 클릭률)</h2>
+<div class="chart"><svg id="ageChart" viewBox="0 0 960 260" width="100%"></svg>
+<div class="legend"><span><i style="background:#e8412c"></i>연예인</span><span><i style="background:#1d1d1f"></i>기분부터</span></div></div>
+<div class="callout">클릭 수는 25~34세가 가장 많고, 클릭률은 35~44세가 가장 높음. 인스타 릴스 노출이 클릭당 89~105원으로 가장 효율적.</div>
+</section>
+
+<section id="why"><h2><span class="n">05</span>경쟁사 광고 규모와 방식</h2>
+<div class="adscale">
+<div class="ash"><div class="asl">지금 게재 중인 Meta 광고 수 (2026.10.19, 광고 라이브러리)</div>
+<div class="asbig"><div><div class="asn wb">약 150개</div><div class="asc">원더바레</div></div><div class="asvs">vs</div><div><div class="asn eb">2개</div><div class="asc">에블바레 (스튜디오 방문용)</div></div></div></div>
+<div class="bars">
+<div class="bar"><span class="bn">원더바레</span><span class="bt"><i style="width:100%;background:#f5a623"></i></span><span class="bv">약 150</span></div>
+<div class="bar"><span class="bn">에블바레 탈잉</span><span class="bt"><i style="width:57.7%;background:#f3b3a8"></i></span><span class="bv">86</span></div>
+<div class="bar"><span class="bn"><b>에블바레 스튜디오</b></span><span class="bt"><i style="width:1.3%;background:#e8412c"></i></span><span class="bv"><b>2</b></span></div>
+<div class="bar"><span class="bn">유어바레</span><span class="bt"><i style="width:0.7%;background:#2bb673"></i></span><span class="bv">1</span></div>
+<div class="bar"><span class="bn">포지티브바레</span><span class="bt"><i style="width:0.7%;background:#8e5cf7"></i></span><span class="bv">1</span></div>
+<div class="bar"><span class="bn">플렉토</span><span class="bt"><i style="width:0%"></i></span><span class="bv">0</span></div>
+</div>
+<div class="asgrid">
+<div><b>64개</b><span>원더바레 최근 30일 신규 광고 (하루 2개꼴)</span></div>
+<div><b>6개</b><span>원더바레 광고 페이지 (본사 2 + 왕십리·신당 지점 + 입점처)</span></div>
+<div><b>9개월째</b><span>원더바레 2026년 1월부터 쉬지 않고 집행</span></div>
+<div><b>86개</b><span>에블바레 탈잉 광고 (클래스 판매용, 탈잉 집행)</span></div>
+</div>
+<p class="note" style="margin-top:12px">광고비는 광고 라이브러리에 공개되지 않아 개수 기준 비교. 에블바레 스튜디오 광고 2개는 10/19 수정 후 검토 중.</p>
+</div>
+<p class="lead">원더바레가 검색량 1위가 된 방식 (기사·홈페이지·Meta 광고 라이브러리 2026.10.19 기준)</p>
+<div class="grid2">
+<div class="card"><h3>1. Meta 광고 대량 집행</h3><ul><li>게재 중 광고 약 150개, 최근 30일 신규 64개</li><li>지점별 동네 광고: "미사 힙업 성지", "영등포 주차 2시간 무료"</li><li>체험 수업 신청형 광고</li></ul></div>
+<div class="card"><h3>2. 지점마다 광고</h3><ul><li>본사 계정 + 왕십리·신당 지점 계정 + 입점처 계정까지 광고 집행</li><li>지점이 생길 때마다 동네 단위 광고가 추가됨</li></ul></div>
+<div class="card"><h3>3. 오픈 프로모션 + 보도자료</h3><ul><li>지점 오픈마다 체험 50% 할인(2만 원), 굿즈 증정</li><li>지점 오픈 기사 꾸준히 배포</li></ul></div>
+<div class="card"><h3>4. 강사·창업 광고도 브랜드 검색을 만듦</h3><ul><li>가맹 설명회, 창업 광고, '원더바레 아카데미' 자격증 광고 집행</li><li>창업자·강사 지망생 검색까지 브랜드 검색량에 포함됨</li><li>광고 링크를 네이버 플레이스 후기로 연결</li></ul></div>
+</div>
+<div class="callout"><b>에블바레와 겹치는 표현</b>: 원더바레도 3가지 프로그램(MOVE · FLEX · WONDER)과 "연예인들의 탄탄한 몸매 비법 '바레'" 광고를 쓰고 있음. 에블바레의 MOVE · BURN · TOGETHER, 셀럽 메시지와 비슷한 방향.</div>
+<p class="note">비교 대상: 원더바레(가맹 20개), 유어바레, 포지티브바레(청담·합정), 플렉토(한남). 키워드 순위가 아니라 바레 전문을 내세우는 주요 경쟁 스튜디오로 선정.</p>
+</section>
+
+<section id="origin"><h2><span class="n">06</span>에블바레가 시작했다: 네이버 검색 시작 시점</h2>
+<p class="lead">각 브랜드명이 네이버에서 의미 있게 검색되기 시작한 달</p>
+<div class="timeline">
+<div class="tl me"><div class="d">2021.09</div><div class="b">에블바레</div><div class="x">국내 최초 바레 전문 브랜드 · 7개 지점 · 한국바레협회</div></div>
+<div class="tl"><div class="d">2022.11</div><div class="b">유어바레</div><div class="x">강남·거제·남해 · 한국바레지도자교육협회</div></div>
+<div class="tl"><div class="d">2024.09</div><div class="b">포지티브바레</div><div class="x">청담(압구정로데오)·합정 · 한국바레지도자협회 강사교육</div></div>
+<div class="tl"><div class="d">2025.02</div><div class="b">원더바레</div><div class="x">전국 20개 지점 가맹 · 아카데미</div></div>
+</div>
+<p class="note">표현 가이드: "국내 최초 바레 전문 브랜드, 2021년부터"처럼 시작 연도를 함께 쓰면 신뢰도가 높아짐.</p>
+</section>
+
+<section id="search"><h2><span class="n">07</span>브랜드 검색 관심도 (최근 1년)</h2>
+<p class="lead">다섯 브랜드끼리 비교한 상대값 (가장 많이 검색된 날 = 100)</p>
+<table><thead><tr><th>브랜드</th><th class="num">지점 수</th><th class="num">1년 평균</th><th class="num">최근 3개월</th><th class="num">지점 1곳당</th></tr></thead><tbody>
+<tr><td>원더바레</td><td class="num">20</td><td class="num">59.0</td><td class="num">60.4</td><td class="num">3.0</td></tr>
+<tr class="me"><td>에블바레</td><td class="num">7</td><td class="num">25.5</td><td class="num">26.3</td><td class="num">3.6</td></tr>
+<tr><td>유어바레</td><td class="num">3</td><td class="num">10.8</td><td class="num">15.4</td><td class="num">3.6</td></tr>
+<tr><td>포지티브바레</td><td class="num">2</td><td class="num">5.9</td><td class="num">6.2</td><td class="num">3.0</td></tr>
+<tr><td>플렉토</td><td class="num">1</td><td class="num">1.8</td><td class="num">1.1</td><td class="num">1.8</td></tr>
+</tbody></table>
+<div class="callout"><b>지점 1곳당 검색 관심도는 에블바레가 1위권.</b> 여성 25~44세만 봐도 순서는 같음 (원더바레 58.2 · 에블바레 27.1 · 유어바레 11.1 · 포지티브바레 7.3 · 플렉토 2.2). 원더바레를 제외하면 에블바레가 압도적 1위.</div>
+<p class="note" style="font-size:14px;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-top:12px"><b>참고 · 유어바레</b>: 광고는 거의 없지만 2026년 검색량이 꾸준히 늘었음(규모는 에블바레의 절반 이하). 네이버 체험 예약·카카오톡 상담으로 검색에서 예약까지 바로 이어지는 동선이 배경으로 보이며, 에블바레도 예약 동선을 정비하면 같은 효과를 기대할 수 있음.</p>
+<div class="chart" style="margin-top:14px"><div class="legend" id="brandLegend"></div><svg id="brandChart" viewBox="0 0 960 320" width="100%"></svg></div>
+<p class="note">월별 검색 추이 2021.1~2026.9 (바레 전체 검색 대비 상대값)</p>
+</section>
+
+<section id="market"><h2><span class="n">08</span>에블바레가 연 바레 시장</h2>
+<div class="kpis">
+<div class="kpi hi"><div class="l">'바레' 검색량</div><div class="v">약 36배</div><div class="s">2021년 대비 2026년 (월 평균)</div></div>
+<div class="kpi"><div class="l">급성장 시작</div><div class="v">2024년~</div><div class="s">2021 2.7 → 2024 14.8 → 2026 78.9</div></div>
+</div>
+<div class="chart" style="margin-top:14px"><svg id="marketChart" viewBox="0 0 960 280" width="100%"></svg></div>
+
+<div class="boom">
+<h3 style="margin:30px 0 6px;font-size:18px">2025년 바레 붐의 계기: 남지현 '바레 강사' 기사</h3>
+<p class="lead" style="margin-bottom:14px">'바레' 일별 검색량 (2025.4~9, 이 기간 최고치 = 100) · 네이버 뉴스 날짜와 대조</p>
+<div class="chart"><svg id="boomChart" viewBox="0 0 960 300" width="100%"></svg></div>
+<div class="grid3">
+<div class="ev"><div class="evd">2025.5.27</div><div class="evt">'바레' 검색 최고치 100</div><div class="evs">포미닛 남지현 '바레 강사' 은퇴설 해명 기사가 5/26~28에 10건 이상 집중</div></div>
+<div class="ev"><div class="evd">2025.6.13</div><div class="evt">'바레' 검색 81</div><div class="evs">남지현 '바레 스튜디오 사업가 새출발' 기사 6/13~16 연속 보도</div></div>
+<div class="ev"><div class="evd">2025.6~8월</div><div class="evt">셀럽 바레 기사 이어짐</div><div class="evs">손담비 출산 후 관리, 손연재 '복근 비결은 바레', 김빈우 몸매 관리 기사</div></div>
+</div>
+<div class="kpis" style="margin-top:12px">
+<div class="kpi"><div class="l">'바레' 월 검색량</div><div class="v">+37%</div><div class="s">2025년 6월 → 7월 (49.8 → 68.2)</div></div>
+<div class="kpi hi"><div class="l">에블바레 월 검색량</div><div class="v">+46%</div><div class="s">2025년 5월 → 8월 (2.59 → 3.78)</div></div>
+<div class="kpi"><div class="l">예년 여름</div><div class="v" style="font-size:22px">상승 없음</div><div class="s">2023·2024년 같은 기간엔 오르지 않음</div></div>
+</div>
+<div class="callout"><b>시사점</b>: 연예인 화제가 바레 시장 전체를 키웠고, 에블바레도 함께 성장. 에블바레는 손담비·손연재·효민 등 셀럽 회원을 보유한 브랜드인 만큼, 기사와 SNS에 <b>'에블바레'라는 이름이 함께 노출</b>되도록 PR하고, 화제가 생기는 시점에 광고를 집중하면 시장 성장분을 더 크게 가져올 수 있음.</div>
+</div>
+</section>
+
+<section id="counter"><h2><span class="n">09</span>지금의 격차와 대응</h2>
+<p class="lead">광고 관점에서 본 지금의 격차와 바로 실행할 대응</p>
+
+<h3 style="margin:8px 0 10px;font-size:17px">지금의 격차</h3>
+<div class="weak">
+<div class="w"><div class="wl">브랜드 검색량</div><div class="wv">25.5 <span>vs 59.0</span></div><div class="ws">원더바레의 절반 이하 · 2025년 7월 역전당함</div></div>
+<div class="w"><div class="wl">시장 점유 (검색)</div><div class="wv">15% → 3%</div><div class="ws">바레 검색 중 에블바레 비중 (2024 → 2026)</div></div>
+<div class="w"><div class="wl">방문용 광고</div><div class="wv">2개 <span>vs 약 150</span></div><div class="ws">원더바레 최근 30일에만 64개 새로 집행</div></div>
+<div class="w"><div class="wl">원조 메시지</div><div class="wv">미사용</div><div class="ws">현재 광고 문구에 '최초·since 2021' 없음</div></div>
+</div>
+
+<div class="callout"><b>예약 동선도 한몫</b>: 지금은 광고 → 인스타 → DM으로만 예약이 이어져, 답장이 늦거나 밤·주말 문의는 놓치기 쉽고 문의→체험 전환도 추적이 어려움.<br>네이버 예약(체험 수업) · Meta 체험 신청 양식 광고 · 프로필 지점별 예약 버튼 · DM 빠른 답장 버튼으로 동선을 줄이면 같은 광고비로 더 많은 체험 예약을 받을 수 있음.</div>
+<h3 style="margin:28px 0 10px;font-size:17px">이미 겹치기 시작한 상권</h3>
+<table><thead><tr><th>에블바레 지점</th><th>근처 경쟁 스튜디오</th><th style="width:110px">우선순위</th></tr></thead><tbody>
+<tr><td><b>강남 본점 · 더레드</b></td><td>역삼 센터필드점 + 포지티브바레 청담(압구정로데오)</td><td><span class="tag red">1순위</span></td></tr>
+<tr><td><b>송파</b></td><td>위례점 · 강동 본점</td><td><span class="tag red">1순위</span></td></tr>
+<tr><td><b>옥수</b></td><td>왕십리점 · 신당점</td><td><span class="tag red">1순위</span></td></tr>
+<tr><td>반포 · 판교 · 광교</td><td>직접 겹치는 지점 없음 (확인 기준)</td><td><span class="tag">2순위</span></td></tr>
+</tbody></table>
+
+<h3 style="margin:28px 0 10px;font-size:17px">광고로 하는 대응 5가지</h3>
+<table><thead><tr><th style="width:170px">약점</th><th>대응</th><th style="width:110px">시기</th></tr></thead><tbody>
+<tr><td>원조인데 아무도 모름</td><td><b>원조를 공식 기록으로</b>: 5주년·누적 회원 1만 명·셀럽·한국바레협회 보도자료 배포, 모든 광고에 "국내 최초 바레 전문 브랜드 · since 2021" 고정 (근거 자료 정리 필수)</td><td>1개월 안</td></tr>
+<tr><td>겹치는 상권 침투</td><td><b>3개 지점 방어 광고</b>: 강남·송파·옥수 반경 광고 + 체험 수업 혜택 + "원조 바레 · 한국바레협회 강사진"</td><td>바로</td></tr>
+<tr><td>시장 성장 대비 검색 비중 작음</td><td><b>검색 선점</b>: 네이버 검색 광고 '바레', 'OO 바레' 지역 키워드 + 네이버 플레이스 후기 이벤트</td><td>1~2개월</td></tr>
+<tr><td>교육 브랜드 노출 부족</td><td><b>지도자 과정 광고</b>: 한국바레협회 지도자 과정 광고, "국내 최초 바레 교육협회" 강조 (원더바레는 3일 자격증)</td><td>2~3개월</td></tr>
+<tr><td>소재 차별화</td><td><b>경험으로 차별화</b>: 가을 엉덩회·월간 에사회·원장·셀럽 콘텐츠를 광고 소재로. 다른 브랜드가 따라 하기 어려운 커뮤니티</td><td>계속</td></tr>
+</tbody></table>
+
+</section>
+
+<section id="plan"><h2><span class="n">10</span>앞으로의 계획</h2>
+<p class="lead">에블바레의 강점(최초·지점당 관심도 1위권·감성 메시지 효율)을 키우는 방향</p>
+<table><thead><tr><th style="width:110px">시기</th><th>할 일</th><th>기대 효과</th></tr></thead><tbody>
+<tr><td><b>10월 말</b></td><td>바뀐 타겟(여성 25~44세 · 서울·경기·인천)과 '퀸 되는 법' 성과 점검</td><td>방문 1회당 비용 유지·개선 확인</td></tr>
+<tr><td><b>11월</b></td><td>"국내 최초 바레 전문 브랜드, 2021년부터" 신뢰 메시지 광고 1개 추가</td><td>후발 브랜드와 차별화, 브랜드 검색 유도</td></tr>
+<tr><td><b>11월</b></td><td>지점별 동네 광고 테스트 (예: 반포·판교·송파 지점 반경 타겟 + "OO동 바레" 문구)</td><td>지역 검색·체험 문의 증가</td></tr>
+<tr><td><b>11월</b></td><td>릴스용 세로 영상: 첫 3초에 원장·셀럽·회원 얼굴 + 감성 한 줄</td><td>시청 유지율·방문 효율 개선</td></tr>
+<tr><td><b>11~12월</b></td><td>'따라 하기' 홈트 저장형 콘텐츠 정기화 (월 1회)</td><td>저장·팔로우 증가, 자연 도달 확대</td></tr>
+<tr><td><b>12월~</b></td><td>한국바레협회 지도자 과정 광고 (강사 지망생 대상)</td><td>'원조 교육기관' 이미지 강화, 브랜드 검색 증가</td></tr>
+<tr><td><b>매월</b></td><td>네이버 브랜드 검색량 추적 (에블바레·경쟁 3사·바레 전체)</td><td>광고·콘텐츠 효과를 검색 관심도로 확인</td></tr>
+</tbody></table>
+<div class="kpis" style="margin-top:14px">
+<div class="kpi"><div class="l">KPI 1</div><div class="v" style="font-size:22px">방문 1회당 100원 이하</div><div class="s">프로필 방문 광고 기준</div></div>
+<div class="kpi"><div class="l">KPI 2</div><div class="v" style="font-size:22px">브랜드 검색량 상승</div><div class="s">네이버 데이터랩 월별 비교</div></div>
+<div class="kpi"><div class="l">KPI 3</div><div class="v" style="font-size:22px">저장·공유 증가</div><div class="s">콘텐츠별 반응 비교</div></div>
+</div>
+</section>
+
+<section id="aware"><h2><span class="n">11</span>인지도 올리기 전략</h2>
+<p class="lead">후발 브랜드가 빠르게 지점을 늘리는 지금, '바레 = 에블바레'를 먼저 각인시키는 것이 목표</p>
+<div class="grid2">
+<div class="card"><h3>핵심 메시지 키트</h3><ul>
+<li><b>국내 최초 바레 전문 브랜드 · since 2021</b></li>
+<li>한국바레협회를 만든 바레</li>
+<li>누적 회원 1만 명+ · 7개 지점</li>
+<li>셀럽들의 내돈내산 바레 (효민·손담비·가희·손연재)</li>
+<li>기분부터 달라지는 50분 (감성 한 줄)</li></ul></div>
+<div class="card"><h3>3단계 구조 (알리기 → 관심 → 예약)</h3><ul>
+<li><b>1. 알리기</b>: 15초 세로 브랜드 영상, Meta 인지도(도달) 광고. 서울·경기·인천 여성 25~44세</li>
+<li><b>2. 관심</b>: 영상을 50% 이상 본 사람, 프로필 방문자에게 지점 광고 다시 노출</li>
+<li><b>3. 예약</b>: 가까운 지점 인스타로 연결해 DM 체험 예약</li></ul></div>
+<div class="card"><h3>브랜드 영상 아이디어 (15초)</h3><ul>
+<li>0~3초: 원장 얼굴 + "2021년, 한국에 바레를 처음 연 곳"</li>
+<li>3~10초: 7개 지점 수업 컷 빠르게, 회원 웃는 얼굴</li>
+<li>10~15초: "국내 최초 바레 전문 브랜드 에블바레" + 지점명</li></ul></div>
+<div class="card"><h3>검색까지 잡기</h3><ul>
+<li>'바레' 검색이 2021년 대비 약 36배로 성장: 검색하는 사람을 놓치지 않기</li>
+<li>네이버 브랜드 검색 광고('에블바레') + 지역 키워드('반포 바레', '판교 바레' 등) 검토</li>
+<li>네이버 플레이스 지점별 후기 쌓기 (광고 도착지로 활용 가능)</li></ul></div>
+</div>
+</section>
+
+<section id="branch"><h2><span class="n">12</span>지점별 광고 시도안</h2>
+<p class="lead">지점 반경 타겟 · 여성 25~44세 · 도착지는 각 지점 인스타그램 (DM 예약). 문구는 예시이며 수업 시간·혜택은 지점 확인 후 확정</p>
+<table><thead><tr><th style="width:110px">지점</th><th style="width:150px">타겟 지역</th><th>메시지 방향 (예시 문구)</th><th style="width:150px">추천 소재</th><th style="width:120px">도착 계정</th></tr></thead><tbody>
+<tr><td><b>강남 본점</b></td><td>언주로148길 반경 3km (신사·압구정·학동)</td><td>"국내 최초 바레, 그 시작인 강남 본점" · 셀럽이 다니는 바레</td><td>연예인 슬라이드, 원장 영상</td><td>@every_barre</td></tr>
+<tr><td><b>더레드</b></td><td>강남 본점과 동일 건물 (B1)</td><td>"바레의 더 빨간 맛" · 같은 50분, 땀은 두 배 (고강도 파워 버닝)</td><td>땀·심박 강조 릴스</td><td>@everybarre_thered</td></tr>
+<tr><td><b>반포</b></td><td>래미안 원베일리 반경 2~3km</td><td>"우리 단지 앞 바레" · 아이 등원 후 나를 위한 50분</td><td>회원 후기, 퀸 되는 법</td><td>@everybarre_banpo</td></tr>
+<tr><td><b>옥수</b></td><td>옥수동 반경 2~3km (금호·한남)</td><td>"옥수·금호 동네 바레" · 퇴근길 들르는 50분</td><td>기분부터 영상</td><td>@everybarre_oksu</td></tr>
+<tr><td><b>송파</b></td><td>석촌동 반경 3km (잠실·석촌호수)</td><td>"석촌호수 산책 말고, 오늘은 바레" · 잠실 직장인 저녁 클래스</td><td>감성 릴스, 따라 하기 홈트</td><td>@everybarre_songpa</td></tr>
+<tr><td><b>판교</b></td><td>동판교 반경 3km (판교 업무지구)</td><td>"판교 직장인의 50분 리셋" · 점심·퇴근 후 바레</td><td>직장인 루틴 릴스</td><td>@everybarre_pangyo</td></tr>
+<tr><td><b>광교</b></td><td>센트럴타운로 반경 3~5km (광교 신도시)</td><td>"광교에서 만나는 원조 바레" · 엄마들의 나를 위한 시간</td><td>회원 후기, 퀸 되는 법</td><td>@everybarre_gwanggyo</td></tr>
+</tbody></table>
+<p class="note">강남 본점과 더레드는 같은 건물이라 겹치는 사람에게 광고가 가지 않도록 메시지를 나눔 (본점 = 입문·클래식, 더레드 = 고강도). 지점 계정을 광고 계정에 연결해야 각 지점 인스타로 바로 연결 가능.</p>
+
+<h3 style="margin:28px 0 10px;font-size:17px">진행 순서와 예상 광고비</h3>
+<table><thead><tr><th style="width:150px">단계</th><th>내용</th><th class="num" style="width:120px">하루</th><th class="num" style="width:140px">기간 광고비</th></tr></thead><tbody>
+<tr><td><b>1단계</b> 시험 (2주)</td><td>브랜드 인지도 영상 1개 (하루 1만 원) + 3개 지점 (하루 5천 원씩)</td><td class="num">25,000원</td><td class="num">약 35만 원</td></tr>
+<tr><td><b>2단계</b> 확대 (1개월)</td><td>인지도 영상 + 7개 지점 전체 (하루 5천 원씩)</td><td class="num">45,000원</td><td class="num">약 135만 원</td></tr>
+<tr><td><b>3단계</b> 집중</td><td>성과 좋은 지점·소재에 예산 몰기, 검색 광고 병행 검토</td><td class="num">협의</td><td class="num">협의</td></tr>
+</tbody></table>
+<p class="note">현재 운영 중인 프로필 방문 광고 2개(하루 5천 원씩, 월 약 30만 원)는 별도. 지점당 소재 2~3개씩이면 총 15~20개 광고 운영 규모.</p>
+<div class="kpis" style="margin-top:14px">
+<div class="kpi"><div class="l">인지도 지표</div><div class="v" style="font-size:20px">도달 · 영상 50% 시청</div><div class="s">브랜드 영상 기준</div></div>
+<div class="kpi"><div class="l">지점 지표</div><div class="v" style="font-size:20px">방문 1회당 비용 · DM 문의 수</div><div class="s">지점별 비교</div></div>
+<div class="kpi"><div class="l">검색 지표</div><div class="v" style="font-size:20px">'에블바레' 검색량</div><div class="s">네이버 데이터랩 월별</div></div>
+</div>
+</section>
+
+<footer>출처: Meta 광고 관리자, 네이버 데이터랩 검색어트렌드, 각 사 홈페이지·인스타그램 공개 정보. 작성: NEWance</footer>
+</div>
+<script>
+const M={"에블바레":[["2021-01",0],["2021-02",0.01],["2021-03",0],["2021-04",0],["2021-05",0],["2021-06",0.01],["2021-07",0],["2021-08",0.02],["2021-09",0.27],["2021-10",0.42],["2021-11",0.17],["2021-12",0.25],["2022-01",0.46],["2022-02",0.3],["2022-03",0.53],["2022-04",0.42],["2022-05",0.41],["2022-06",0.38],["2022-07",0.54],["2022-08",0.51],["2022-09",0.57],["2022-10",0.78],["2022-11",0.54],["2022-12",0.46],["2023-01",0.86],["2023-02",1.11],["2023-03",2.09],["2023-04",1.38],["2023-05",2.38],["2023-06",2.03],["2023-07",1.86],["2023-08",1.63],["2023-09",1.39],["2023-10",1.45],["2023-11",1.78],["2023-12",1.44],["2024-01",1.58],["2024-02",2.26],["2024-03",2.48],["2024-04",3.28],["2024-05",2.66],["2024-06",2.12],["2024-07",2.24],["2024-08",1.91],["2024-09",1.71],["2024-10",2.2],["2024-11",2.04],["2024-12",1.48],["2025-01",1.55],["2025-02",1.72],["2025-03",1.87],["2025-04",2.02],["2025-05",2.59],["2025-06",3.41],["2025-07",3.63],["2025-08",3.78],["2025-09",2.85],["2025-10",2.57],["2025-11",1.9],["2025-12",1.87],["2026-01",2.09],["2026-02",1.74],["2026-03",1.82],["2026-04",2.02],["2026-05",1.91],["2026-06",2.37],["2026-07",2.64],["2026-08",2.36],["2026-09",2.22]],"원더바레":[["2021-01",0],["2021-02",0],["2021-03",0],["2021-04",0],["2021-05",0],["2021-06",0],["2021-07",0],["2021-08",0],["2021-09",0],["2021-10",0],["2021-11",0],["2021-12",0],["2022-01",0],["2022-02",0],["2022-03",0],["2022-04",0],["2022-05",0],["2022-06",0],["2022-07",0],["2022-08",0],["2022-09",0],["2022-10",0],["2022-11",0],["2022-12",0],["2023-01",0],["2023-02",0],["2023-03",0],["2023-04",0],["2023-05",0],["2023-06",0],["2023-07",0],["2023-08",0],["2023-09",0],["2023-10",0],["2023-11",0],["2023-12",0],["2024-01",0],["2024-02",0],["2024-03",0],["2024-04",0],["2024-05",0],["2024-06",0],["2024-07",0],["2024-08",0],["2024-09",0],["2024-10",0],["2024-11",0],["2024-12",0],["2025-01",0],["2025-02",0.14],["2025-03",0.51],["2025-04",1.64],["2025-05",2.17],["2025-06",2.38],["2025-07",3.65],["2025-08",4.29],["2025-09",3.98],["2025-10",4.71],["2025-11",5.86],["2025-12",4.89],["2026-01",5.38],["2026-02",4.18],["2026-03",4.77],["2026-04",4.09],["2026-05",3.89],["2026-06",4.35],["2026-07",5.31],["2026-08",5.13],["2026-09",4.88]],"유어바레":[["2021-01",0],["2021-02",0],["2021-03",0],["2021-04",0],["2021-05",0],["2021-06",0],["2021-07",0],["2021-08",0],["2021-09",0],["2021-10",0],["2021-11",0],["2021-12",0],["2022-01",0],["2022-02",0],["2022-03",0],["2022-04",0],["2022-05",0],["2022-06",0],["2022-07",0],["2022-08",0],["2022-09",0],["2022-10",0],["2022-11",0.19],["2022-12",0.59],["2023-01",0.36],["2023-02",0.12],["2023-03",0.07],["2023-04",0.05],["2023-05",0.04],["2023-06",0.07],["2023-07",0.04],["2023-08",0.03],["2023-09",0.02],["2023-10",0.01],["2023-11",0.05],["2023-12",0.06],["2024-01",0.07],["2024-02",0.08],["2024-03",0.1],["2024-04",0.13],["2024-05",0.23],["2024-06",0.54],["2024-07",0.54],["2024-08",0.45],["2024-09",0.28],["2024-10",0.35],["2024-11",0.26],["2024-12",0.32],["2025-01",0.45],["2025-02",0.55],["2025-03",0.47],["2025-04",0.49],["2025-05",0.45],["2025-06",0.56],["2025-07",0.42],["2025-08",0.28],["2025-09",0.34],["2025-10",0.24],["2025-11",0.45],["2025-12",0.39],["2026-01",0.54],["2026-02",0.61],["2026-03",0.77],["2026-04",1.12],["2026-05",0.9],["2026-06",0.94],["2026-07",1.66],["2026-08",1.35],["2026-09",1.22]],"포지티브바레":[["2021-01",0],["2021-02",0],["2021-03",0],["2021-04",0],["2021-05",0],["2021-06",0],["2021-07",0],["2021-08",0],["2021-09",0],["2021-10",0],["2021-11",0],["2021-12",0],["2022-01",0],["2022-02",0],["2022-03",0],["2022-04",0],["2022-05",0],["2022-06",0],["2022-07",0],["2022-08",0],["2022-09",0],["2022-10",0],["2022-11",0],["2022-12",0],["2023-01",0],["2023-02",0],["2023-03",0],["2023-04",0],["2023-05",0],["2023-06",0],["2023-07",0],["2023-08",0],["2023-09",0],["2023-10",0],["2023-11",0],["2023-12",0],["2024-01",0],["2024-02",0],["2024-03",0],["2024-04",0],["2024-05",0],["2024-06",0],["2024-07",0],["2024-08",0.09],["2024-09",0.51],["2024-10",0.39],["2024-11",0.43],["2024-12",0.48],["2025-01",0.54],["2025-02",0.55],["2025-03",0.52],["2025-04",0.5],["2025-05",0.53],["2025-06",0.57],["2025-07",0.81],["2025-08",0.73],["2025-09",0.7],["2025-10",0.43],["2025-11",0.39],["2025-12",0.54],["2026-01",0.64],["2026-02",0.46],["2026-03",0.5],["2026-04",0.41],["2026-05",0.51],["2026-06",0.4],["2026-07",0.46],["2026-08",0.37],["2026-09",0.48]],"바레전체":[["2021-01",1.56],["2021-02",1.33],["2021-03",1.76],["2021-04",1.4],["2021-05",1.42],["2021-06",1.55],["2021-07",2.42],["2021-08",6.09],["2021-09",2.65],["2021-10",4.79],["2021-11",2.74],["2021-12",5.02],["2022-01",3.26],["2022-02",3.08],["2022-03",2.21],["2022-04",1.89],["2022-05",2.06],["2022-06",2.05],["2022-07",2.44],["2022-08",2.35],["2022-09",2.96],["2022-10",2.36],["2022-11",2.74],["2022-12",2.69],["2023-01",3.38],["2023-02",3.06],["2023-03",4.03],["2023-04",3.62],["2023-05",4.81],["2023-06",5.58],["2023-07",5.25],["2023-08",5.24],["2023-09",4.74],["2023-10",5.15],["2023-11",5.5],["2023-12",5.32],["2024-01",7.16],["2024-02",8.63],["2024-03",10.07],["2024-04",10.94],["2024-05",12.55],["2024-06",13.26],["2024-07",19.44],["2024-08",15.87],["2024-09",18.77],["2024-10",23.84],["2024-11",19.86],["2024-12",17.4],["2025-01",20.42],["2025-02",22.97],["2025-03",27.16],["2025-04",31.32],["2025-05",38.98],["2025-06",49.81],["2025-07",68.21],["2025-08",68.73],["2025-09",67],["2025-10",58.91],["2025-11",57.44],["2025-12",56.02],["2026-01",61.78],["2026-02",52.06],["2026-03",70.47],["2026-04",69.79],["2026-05",77.37],["2026-06",89.69],["2026-07",91.69],["2026-08",100],["2026-09",97.05]]};
+const NS='http://www.w3.org/2000/svg';
+function el(t,a,p){const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);p&&p.appendChild(e);return e}
+function line(svg,series,colors,opts){const W=960,H=+svg.getAttribute('viewBox').split(' ')[3],L=44,R=16,T=16,B=30;
+ const n=series[0].vals.length;const max=opts.max;const x=i=>L+i*(W-L-R)/(n-1),y=v=>T+(H-T-B)*(1-v/max);
+ for(let g=0;g<=4;g++){const v=max*g/4;el('line',{x1:L,x2:W-R,y1:y(v),y2:y(v),stroke:'#eee'},svg);el('text',{x:L-8,y:y(v)+4,'text-anchor':'end','font-size':11,fill:'#999'},svg).textContent=+v.toFixed(1)}
+ series[0].vals.forEach((d,i)=>{if(d[0].endsWith('-01')){el('text',{x:x(i),y:H-8,'text-anchor':'middle','font-size':11,fill:'#999'},svg).textContent=d[0].slice(0,4);el('line',{x1:x(i),x2:x(i),y1:T,y2:H-B,stroke:'#f3f3f3'},svg)}});
+ series.forEach((s,k)=>{el('path',{d:s.vals.map((d,i)=>(i?'L':'M')+x(i).toFixed(1)+','+y(d[1]).toFixed(1)).join(''),fill:'none',stroke:colors[k],'stroke-width':s.w||2,'stroke-linejoin':'round'},svg)});}
+const bc={'에블바레':'#e8412c','원더바레':'#f5a623','유어바레':'#2bb673','포지티브바레':'#8e5cf7'};
+const bs=Object.keys(bc).map(k=>({name:k,vals:M[k],w:k==='에블바레'?3.2:2}));
+line(document.getElementById('brandChart'),bs,bs.map(s=>bc[s.name]),{max:8});
+document.getElementById('brandLegend').innerHTML=bs.map(s=>'<span><i style="background:'+bc[s.name]+'"></i>'+s.name+'</span>').join('');
+line(document.getElementById('marketChart'),[{vals:M['바레전체'],w:3}],['#1d1d1f'],{max:100});
+(function(){const svg=document.getElementById('ageChart');const ages=['18~24','25~34','35~44','45~54'];const a=[3.9,5.4,7.6,6.7],b=[4.9,5.9,7.4,9.3];
+ const L=60,W=960,H=260,T=20,B=34,max=10,gw=(W-L-20)/4,bw=60;const y=v=>T+(H-T-B)*(1-v/max);
+ for(let g=0;g<=5;g++){const v=g*2;el('line',{x1:L,x2:W-20,y1:y(v),y2:y(v),stroke:'#eee'},svg);el('text',{x:L-8,y:y(v)+4,'text-anchor':'end','font-size':11,fill:'#999'},svg).textContent=v+'%'}
+ ages.forEach((ag,i)=>{const cx=L+gw*i+gw/2;[[a[i],'#e8412c',-bw-4],[b[i],'#1d1d1f',4]].forEach(([v,c,o])=>{el('rect',{x:cx+o,y:y(v),width:bw,height:(H-B)-y(v),rx:6,fill:c},svg);el('text',{x:cx+o+bw/2,y:y(v)-6,'text-anchor':'middle','font-size':13,'font-weight':700,fill:c},svg).textContent=v+'%'});
+ el('text',{x:cx,y:H-10,'text-anchor':'middle','font-size':13,fill:'#555'},svg).textContent=ag+'세'});})();
+
+(function(){const D=[["04-01",10.4],["04-02",10.8],["04-03",11.6],["04-04",10.2],["04-05",7.9],["04-06",6.6],["04-07",10.1],["04-08",11.6],["04-09",13],["04-10",11.2],["04-11",10.3],["04-12",25.8],["04-13",7.6],["04-14",19],["04-15",14.5],["04-16",15.9],["04-17",12.1],["04-18",25.7],["04-19",11.6],["04-20",9.9],["04-21",13.5],["04-22",15.5],["04-23",15.9],["04-24",16.2],["04-25",16.9],["04-26",12],["04-27",9.9],["04-28",11.6],["04-29",12.6],["04-30",31.8],["05-01",12.7],["05-02",11.7],["05-03",9.6],["05-04",7.4],["05-05",7.1],["05-06",8.6],["05-07",11.7],["05-08",11.9],["05-09",14.7],["05-10",9.2],["05-11",8.1],["05-12",17.3],["05-13",15.3],["05-14",14.2],["05-15",15.7],["05-16",12.7],["05-17",9.9],["05-18",11.5],["05-19",14.5],["05-20",15.1],["05-21",15.1],["05-22",16.6],["05-23",14.7],["05-24",13.6],["05-25",11.7],["05-26",20.6],["05-27",100],["05-28",29.4],["05-29",19.9],["05-30",17.9],["05-31",13.9],["06-01",14.4],["06-02",17.2],["06-03",12.9],["06-04",15],["06-05",15.9],["06-06",12.6],["06-07",11.6],["06-08",10.2],["06-09",15.3],["06-10",15.2],["06-11",16.7],["06-12",16.1],["06-13",81.3],["06-14",20.2],["06-15",15.6],["06-16",17],["06-17",32.7],["06-18",23.6],["06-19",22.3],["06-20",19.5],["06-21",14.6],["06-22",12.5],["06-23",18.7],["06-24",22.6],["06-25",75.5],["06-26",28.7],["06-27",22.5],["06-28",18.2],["06-29",14.7],["06-30",21.4],["07-01",40.3],["07-02",33.7],["07-03",28.3],["07-04",47.3],["07-05",26.1],["07-06",19],["07-07",25],["07-08",33.4],["07-09",25.3],["07-10",23.8],["07-11",23.1],["07-12",17],["07-13",15.9],["07-14",22],["07-15",26.6],["07-16",25.4],["07-17",26.1],["07-18",24.5],["07-19",27.3],["07-20",21.3],["07-21",31.8],["07-22",58],["07-23",44.7],["07-24",36.2],["07-25",32.8],["07-26",27.7],["07-27",24.5],["07-28",29.2],["07-29",28.4],["07-30",28],["07-31",23.8],["08-01",23.2],["08-02",18.3],["08-03",26],["08-04",26.7],["08-05",27.6],["08-06",28.8],["08-07",25.6],["08-08",25.5],["08-09",19],["08-10",21.6],["08-11",25.2],["08-12",33.5],["08-13",29.6],["08-14",27.4],["08-15",22.4],["08-16",20.9],["08-17",19.3],["08-18",28.7],["08-19",36.4],["08-20",71.6],["08-21",58.7],["08-22",34.8],["08-23",24.7],["08-24",20.8],["08-25",29.4],["08-26",33.2],["08-27",33.5],["08-28",29.9],["08-29",30],["08-30",27.3],["08-31",23.4],["09-01",28.5],["09-02",33.3],["09-03",37.7],["09-04",29.9],["09-05",28.1],["09-06",24.2],["09-07",22.2],["09-08",31.5],["09-09",33.1],["09-10",29.3],["09-11",29.2],["09-12",32.4],["09-13",22.3],["09-14",21.8],["09-15",25.3],["09-16",38.5],["09-17",33.7],["09-18",28.8],["09-19",25.4],["09-20",20.1],["09-21",18.3],["09-22",26.5],["09-23",37.7],["09-24",32.2],["09-25",28.3],["09-26",26.9],["09-27",45.7],["09-28",31.9],["09-29",28.9],["09-30",28.9]];const svg=document.getElementById('boomChart');if(!svg)return;const W=960,H=300,L=40,R=16,T=20,B=30;const n=D.length;const x=i=>L+i*(W-L-R)/(n-1),y=v=>T+(H-T-B)*(1-v/100);
+for(let g=0;g<=4;g++){const v=g*25;el('line',{x1:L,x2:W-R,y1:y(v),y2:y(v),stroke:'#eee'},svg);el('text',{x:L-8,y:y(v)+4,'text-anchor':'end','font-size':11,fill:'#999'},svg).textContent=v}
+D.forEach((d,i)=>{if(d[0].endsWith('-01')){el('text',{x:x(i),y:H-8,'text-anchor':'middle','font-size':11,fill:'#999'},svg).textContent=(+d[0].slice(0,2))+'월'}});
+el('path',{d:D.map((d,i)=>(i?'L':'M')+x(i).toFixed(1)+','+y(d[1]).toFixed(1)).join(''),fill:'none',stroke:'#1d1d1f','stroke-width':1.6},svg);
+[['05-27','남지현 은퇴설 해명'],['06-13','남지현 사업가 새출발'],['08-20','셀럽 바레 기사 집중']].forEach(([d,t])=>{const i=D.findIndex(v=>v[0]===d);if(i<0)return;const cx=x(i),cy=y(D[i][1]);el('circle',{cx,cy,r:6,fill:'#e8412c'},svg);const tx=Math.min(cx+8,W-150);el('text',{x:tx,y:Math.max(cy-10,14),'font-size':12,'font-weight':700,fill:'#e8412c'},svg).textContent=d.replace('-','/')+' '+t});})();
+</script></body></html>
